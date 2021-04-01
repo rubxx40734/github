@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="第七周LV3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.css">
+    <title>第七周LV3</title>
+</head>
+<body>
+     <div class="wrap">
+         <div class="ticketGroup">
+             <div class="ticketPct">
+                <img src="https://i.imgur.com/iRssPpJ.png" alt="">
+                <img src="https://i.imgur.com/vJt0znH.png" alt="" class="pcthidde">
+             </div>
+             <div class="ticketForm">
+                <form action="">
+                    <h1 class="title">⊕新增旅遊套票</h1>
+                    <div class="fromgroup">
+                        <label for="ticketName">套票名稱</label>
+                        <input type="text" placeholder="請填寫套票名稱" id="ticketName"  class="ticketName-js">
+                    </div>
+                    <div class="fromgroup">
+                        <label for="ticketUrlimg">圖片網址</label>
+                        <input type="text" placeholder="請填寫圖片網址" id="ticketUrlimg"  class="ticketUrlimg-js">
+                    </div>
+                    <div class="fromgroup">
+                        <label for="ticketLocal">景點選擇</label>
+                        <select name="" id="ticketLocal" class="ticketLocal-js">
+                            <option value="全部地區">全部地區</option>
+                            <option value="高雄">高雄</option>
+                            <option value="台北">台北</option>
+                            <option value="台中">台中</option>
+                        </select>
+                    </div>
+                    <div class="fromgroup">
+                        <label for="ticketPrice">套票金額</label>
+                        <input type="number" placeholder="請填寫套票金額" id="ticketPrice"  class="ticketPrice-js">
+                    </div>
+                    <div class="fromgroup">
+                        <label for="ticketNum">套票組數</label>
+                        <input type="number" placeholder="請填寫套票組數" id="ticketNum"  class="ticketNum-js">
+                    </div>
+                    <div class="fromgroup">
+                        <label for="ticketStar">套票星級</label>
+                        <input type="number" placeholder="請填寫套票星級" id="ticketStar"  class="ticketStar-js">
+                    </div>
+                    <div class="fromgroup">
+                        <label for="ticketDescription">套票描述</label>
+                        <textarea  id="ticketDescription" cols="15" rows="5" placeholder="請輸入套票描述(限100字)" class="ticketDescription-js"></textarea>
+                    </div>
+                    
+                    <input type="button" value="新增套票" class="btn">
+                    
+                   
+                </form>
+             </div>
+         </div>
+         <div class="searchGroup">
+             <div class="search">
+                <div class="search-txt">
+                    <select class="search-txt-js">
+                        <option value="地區搜尋">地區搜尋</option>
+                        <option value="全部地區">全部地區</option>
+                        <option value="高雄">高雄</option>
+                        <option value="台北">台北</option>
+                        <option value="台中">台中</option>
+                    </select>
+                    <p class="searchContent">總共有 3 筆資料</p>
+                </div>
+                <div class="search-pie">
+                     
+                </div>
+             </div>
+             <ul class="ticketArea">
+                 <li class="ticletArea-card">
+                     <div class="ticketCardPct">
+                         <img src="https://i.imgur.com/QXa1fMZ.png" alt="">
+                         <p class="position1">台北</p>
+                         <p class="position2">8.6</p>
+                     </div>
+                     <div class="ticketCardtxt">
+                         <h3><a href="#">綠島自由行套裝行程</a></h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              Similique eum rem pariatur quaerat nostrum voluptatum, 
+                              alias cum eos ratione? Sint sapiente perspiciatis at amet c
+                              onsequuntur quia ullam aperiam eum magnam?</p>
+                     </div>
+                     <div class="ticketCardInfo">
+                           <div class="info-num"><p>剩下最後 8 組</p></div>
+                           <div class="info-price"><p>TWD $ <span>1800</span></p></div>
+                     </div>
+                 </li>
+                 <li class="ticletArea-card"> 
+                    <div class="ticketCardPct">
+                        <img src="https://i.imgur.com/4UHm8WX.png" alt="">
+                        <p class="position1">高雄</p>
+                        <p class="position2">8.6</p>
+                    </div>
+                    <div class="ticketCardtxt">
+                        <h3><a href="#">清境高空觀景步道</a></h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Sint maiores quidem odio reiciendis labore, earum 
+                            perspiciatis quo id nemo aliquam?</p>
+                    </div>
+                    <div class="ticketCardInfo">
+                        <div class="info-num"><p>剩下最後 8 組</p></div>
+                        <div class="info-price"><p>TWD $ <span>1800</span></p></div>
+                    </div>
+                </li>
+                 <li class="ticletArea-card">
+                    <div class="ticketCardPct">
+                        <img src="https://i.imgur.com/H97Wgfn.png" alt="">
+                        <p class="position1">台中</p>
+                        <p class="position2">8.6</p>
+                    </div>
+                    <div class="ticketCardtxt">
+                        <h3><a href="#">山林悠遊套票</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Non reiciendis ex quos est tempore! Nostrum, unde sit 
+                            illum ipsa fuga dolorem quibusdam eum eligendi quasi
+                             maiores conseqvoluptatum ut 
+                             totam! Laboriosam, excepturi. Magni ut culpa cnsectetur. 
+                             Non reiciendis ex quos est tempore! Nostrum, unde sit 
+                              maiores consequatur, quos alias, quisquam est voluptatum ut 
+                              totam! Laboriosam, excepturi. Magni ut culpa cumque!
+                            </p>
+                    </div>
+                    <div class="ticketCardInfo">
+                        <div class="info-num"><p>剩下最後 8 組</p></div>
+                        <div class="info-price"><p>TWD $ <span>1800</span></p></div>
+                    </div>
+                </li>
+             </ul>
+         </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.js"></script>
+    <script src="第七周LV3.js"></script>
+</body>
+</html>

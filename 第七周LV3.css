@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* =======================上方新增內容======================== */
+.ticketGroup{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px rgb(196, 191, 191);
+    border-radius: 3px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+.ticketPct{
+
+    width: 50%;
+    padding: 60px;
+}
+.ticketForm{
+    width: 50%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.title{
+    color: #00807E;
+    font-size: 28px;
+    border-bottom: 2px solid #00807E;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.fromgroup{
+    text-align: center;
+    margin-bottom: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fromgroup label{
+    color: #00807E;
+    font-size: 18px;
+    font-weight: 550;
+    margin-right: 20px;
+    width: 40%;
+}
+.fromgroup input,.fromgroup select,.fromgroup textarea{
+    width: 60%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #00807E;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: #00807E;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 50%;
+}
+
+.btn:hover{
+    background: orange;
+    color: white;
+    align-items: right;
+}
+/* =====================套票內容==================== */
+.search{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgb(196, 191, 191);
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.search-txt select{
+    border-bottom: 1px solid #00807E;
+}
+.search-txt{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+.searchContent{
+    margin-left: 20px;
+    color: #00807E;
+    font-weight: 600;
+}
+.search-txt select{
+    width: 50%;
+    padding: 5px 30px;
+}
+.search-pie{
+    width: 40%;
+    height: 250px;
+}
+/* ===================================套票內容========================== */
+.ticketArea{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.ticketArea li{
+    width: 30%;
+    margin-right: 3%;
+    box-shadow: 2px 2px 2px rgb(196, 191, 191);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.ticketCardtxt,.ticketCardInfo{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.ticketCardtxt a{
+   color: #00807E;
+   display: block;
+   font-size: 18px;
+   text-decoration: none;
+   font-weight: 600;
+   border-bottom: 2px solid #00807E;
+   line-height: 1.5;
+   margin-bottom: 20px;
+   
+}
+.ticketCardtxt{
+    height: calc(100% - 190px) 
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!這行是超級關鍵!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+.ticketCardtxt p{
+    line-height: 1.5;
+    font-weight: 500;
+}
+.ticketCardInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.ticketCardInfo p{
+    color: #00807E;
+    font-weight: 600;
+}
+span{
+    font-size: 28px;
+}
+.ticketCardPct{
+    position: relative;
+}
+.position1{
+    width: 70px;
+    background: #00807E;
+    color: aliceblue;
+    padding: 8px 10px;
+    text-align: center;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+}
+.position2{
+    width: 50px;
+    background: rgb(7, 158, 83);
+    padding: 8px 10px;
+    color: cornsilk;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.ticletArea-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ticletArea-card img{
+    width: 100%;
+    height: 170px;
+}
+@media(max-width:767px){
+    .ticketGroup{
+        display: flex;
+        flex-direction: column;
+    }
+    .ticketPct{
+        width: 100%;
+    }
+    .ticketForm{
+        width: 100%;
+    }
+    .pcthidde{
+        display: none;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-txt select{
+       width: 100%;
+       margin-bottom: 20px;
+    }
+    .ticketArea{
+        display: flex;
+        flex-direction: column;
+    }
+    .ticketArea li{
+        width: 90%;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+} 
